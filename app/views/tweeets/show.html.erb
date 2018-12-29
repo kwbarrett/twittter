@@ -1,9 +1,21 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Tweeet:</strong>
-  <%= @tweeet.tweeet %>
-</p>
+<div class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-half">
+        <h1 class="title">
+          View Tweeet
+        </h1>
 
-<%= link_to 'Edit', edit_tweeet_path(@tweeet) %> |
-<%= link_to 'Back', tweeets_path %>
+        <p>
+          <strong>Tweeet:</strong>
+          <%= @tweeet.tweeet %>
+        </p>
+        <p>
+          <%= link_to 'Edit', edit_tweeet_path(@tweeet) %> |
+          <%= link_to 'Back', tweeets_path %>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
